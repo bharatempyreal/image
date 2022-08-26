@@ -28,10 +28,10 @@ class HomeController extends Controller
     }
     public function image(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $image = $request->file('file');
         $imageName = $image->getClientOriginalName();
-        $image->move(public_path('storage/app/public/uploads/'),$imageName);
+        $image->move(storage_path('storage/app/public/uploads/'),$imageName);
         
         $imageUpload = new File();
         $imageUpload->filename = $imageName;

@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="container pt-5">
-                <form method="post" action="{{url('image/upload/store')}}" enctype="multipart/form-data"
+                <form method="post" action="{{url('image')}}" enctype="multipart/form-data"
                     class="dropzone" id="dropzone">
                     @csrf
                 </form>
