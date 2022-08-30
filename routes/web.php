@@ -32,7 +32,8 @@ Route::delete('/remove/{id}', [App\Http\Controllers\HomeController::class, 'remo
 Route::post('/delete', [App\Http\Controllers\HomeController::class, 'deleteImage'])->name('delete');
 
 Route::get('/table', [App\Http\Controllers\HomeController::class, 'table'])->name('table');
-Route::get('/getimg', [App\Http\Controllers\HomeController::class, 'getImg'])->name('getimg');
+Route::post('/getimg', [App\Http\Controllers\HomeController::class, 'getImg'])->name('getimg');
+Route::post('/sortable', [App\Http\Controllers\HomeController::class, 'sortable'])->name('sortable');
 
 
 
